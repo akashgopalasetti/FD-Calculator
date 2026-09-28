@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text-center ">
+        <h1 id="title">Calculate Maturity</h1>
+    </div>
+
+
+    <div class="container ">
+        <div class="row  d-flex justify-content-center ">
+            <div class=" col-lg-6 col-md-6  pt-5  d-flex justify-content-center">
+                <img src="img.png" alt="" style="height:auto;" class="img-fluid">
+            </div>
+           
+            <div class="col-lg-4 col-md-5   formcontainer">
+                <form action="" onsubmit="checkMaturity()">
+                    <div class="from-group">
+                        <label for="" class="form-lable">Username :</label>
+                        <input type="text" class="form-control" id="username" required placeholder="Enter your name">
+                   
+                   </div>
+                    <div class="from-group">
+                        <label for="" class="form-lable">Age :</label>
+                        <input type="number" class="form-control" id="age" required placeholder="Enter your age">
+                   </div>
+                    <div class="from-group">
+                 
+                        <label for="" class="form-lable">Amount :</label>
+                        <input type="number" id="amount" class="form-control" required placeholder="Enter an Amount">
+                   </div>
+                    <div class="from-group mb-3">
+                        <label for="" class="form-lable">Tenure/Term/Duration:</label>
+                        <input type="number" id="tenure" class="form-control" required placeholder="Tenure">
+                    </div>
+                   <div class="btn-group btn ">
+                        <button id="checkbtn" class="btncheck" type="submit"  >Check</button>
+                        <button id="resetbtn" type="reset" onclick="cleardetails()">Reset</button>
+                    </div>
+                </form>
+                
+            </div>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="text-center">
+        <h1 id="details">Hey User, total maturity value is: $$$</h1>
+    </div>
+
+<script src="app.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
